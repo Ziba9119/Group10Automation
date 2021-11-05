@@ -18,8 +18,15 @@ public class LoginPage {
     public static void main(String[] args) {
         System.out.println("Hello");
         System.out.println("Hi");
+
+        System.out.println("group 10");
+        System.out.println("cydeo");
         System.out.println("nicole");
-        //nicole
+
+        System.out.println("can you guess who is this? no hint sorry :)");
+        System.out.println("cydeo");
+
+
     }
 
 }
