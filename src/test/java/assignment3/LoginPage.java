@@ -19,9 +19,6 @@ public class LoginPage {
         System.out.println("Hello");
         System.out.println("Hi");
         System.out.println("nicole");
-
-
-
     }
 
 }
