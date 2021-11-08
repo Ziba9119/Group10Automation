@@ -28,6 +28,30 @@ public class TestingBurger {
             System.out.println("Fail: URL's are not matching");
         }
 
+        // Scenario:menu page should open and user should see menu items
+        // Step1: Go to "https://burgerim.com/"
+       // driver.navigate().back();
+        System.out.println("went back home page");
+        //Step2: Click on menu button
+        clickOnLink("MENU", driver);
+        // Step3: User should see ANGUS BEEF
+        Thread.sleep(1000);
+       String actualResult = driver.findElement(By.xpath("//span[text()='ANGUS BEEF']")).getText();
+        System.out.println(actualResult);
+       if(actualResult.equals("ANGUS BEEF")){
+           System.out.println("PASS: ");
+       }else {
+           System.out.println("FAIL: ");
+       }
+        /*
+
+        Scenario:menu page should open and user should see menu items
+
+            Step1: Go to "https://burgerim.com/"
+            Step2: Click on menu button
+            Step3: User should see ANGUS BEEF
+         */
+
 
 
     }
