@@ -1,0 +1,48 @@
+Burgerim App
+
+User story
+-as a user I should be able to click each menu items and see proper content
+
+Acceptance criteria
+-home page should open and user should see home page							++
+-menu page should open and user should see menu items							imil
+-contact page should open and user should see contact options					nicole
+-location page should open and user should see franchises						taha
+-careers page should open and user should see employment positions avail.		fadime
+-order online page should open and user should select closest store				taha
+
+
+STARTING TEST CASES
+
+Scenario: home page should open and user should see home page
+
+	Step1: Go to "https://burgerim.com/"
+	Step2: Click on home button
+	Step3: Current url should be "https://burgerim.com/"
+
+Scenario:menu page should open and user should see menu items
+
+	Step1: Go to "https://burgerim.com/"
+	Step2: Click on menu button
+	Step3: User should see ANGUS BEEF
+
+Scenario: contact page should open and user should see contact options
+
+    Step1: Go to "https://burgerim.com/"
+    Step2: Click on Contact button
+    Step3: Current url should be "https://burgerim.com/contact/"
+    Step4: Franchise Opportunity and Press Inqueries should be displayed
+
+Scenario: location page should open and user should see franchises
+
+	Step1: Go to "https://burgerim.com/"
+	Step2: Click on locations button
+	Step3: User should be able to enter his zip code
+	Step4: User should be able to click locate me
+
+Scenario: careers page should open and user should see employment positions availability
+
+    Step1: Go to "https://burgerim.com/"
+    Step2: Click on carriers button
+    Step3: Current url should be "https://burgerim.com/careers/"
+    Step4: User should see SEARCH OPEN POSITIONS
