@@ -45,6 +45,8 @@ public class LoginPage {
 
         MainPage main = new MainPage();
         main.testMainPage(driver);
+        Vehicles veh = new Vehicles();
+        veh.testVehicle(driver);
 
     }
 

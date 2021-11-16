@@ -10,7 +10,7 @@ import java.util.List;
 public class MainPage {
 
     @Test
-    public void testMainPage(WebDriver driver){
+    public void testMainPage(WebDriver driver) throws InterruptedException {
 
         WebElement launchpadText = driver.findElement(By.xpath("//h1[text() = 'Quick Launchpad']"));
 
@@ -30,8 +30,26 @@ public class MainPage {
             }
         }
 
+        List<WebElement> fleetModules = driver.findElements(By.xpath("//div[@id='main-menu']/ul/li[1]/div/div/ul/li"));
+        fleetModules.remove(0);
+        fleetModules.remove(0);
 
+        WebElement fleet = driver.findElement(By.xpath("(//span[@class = 'title title-level-1'])[1]"));
+        fleet.click();
 
+        System.out.println();
+
+        for (int i = 0; i < fleetModules.size(); i++) {
+            if(fleetModules.get(i).isDisplayed()){
+                System.out.println(fleetModules.get(i).getText() + " is properly displayed");
+            }else{
+                System.out.println(fleetModules.get(i).getText() + " verification failed");
+            }
+        }
+
+        Thread.sleep(4000);
+
+        System.out.println();
 
     }
 
