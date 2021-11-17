@@ -53,7 +53,7 @@ public class US1_AC3_EventPlanner_Nicole {
             System.out.println("FAIL: Vehicle information can't seen");
         }
 
-
+        //new
 
     }
 }
