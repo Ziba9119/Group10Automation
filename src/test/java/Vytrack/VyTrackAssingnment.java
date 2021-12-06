@@ -48,6 +48,17 @@ public class VyTrackAssingnment {
         odometer.click();
         Thread.sleep(1234);
         Assert.assertTrue(driver.getTitle().contains("Odometer"));
+
+        //verify the user is on the grid information page
+
+
+        //locate the create vehicle odometer button
+        Thread.sleep(2000);
+       driver.findElement(By.xpath("//a[@class='btn main-group btn-primary pull-right ']")).click();
+       
+       //verify user can enter information on the create vehicle odometer page
+
+
     }
 
 
